@@ -1,28 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <title>Démo menu déroulant</title>
-
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico">
+    <meta charset='utf-8' />
+    <title>Formulaire</title>
+    <link href="formulaire.css" rel="stylesheet" />
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-                <ul>
-                    <li><a href="#">Nouveau</a></li>
-                    <li><a href="#">Ouvrir</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Editer</a></li>
-            <li><a href="#">Contacter</a></li>
-        </ul>
-    </nav>
+    <!-- Mise en place du formulaire -->
+    <form id="inscriptionForm" onsubmit="return mySubmitFunction()">
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <span class="firstCol">Sexe :</span>
+            <label> 
+                <input type="radio" id="gender_Male"  name="sexe" value="masculin" />Masculin</label>
+            <label> 
+                <input type="radio" id="gender_Female" name="sexe" value="feminin" />Féminin 
+            </label>
+            <br /><br />
 
+            <label for="nom" class="firstCol">Nom</label>
+            <input type="text" name="nom" id="nom" size="20" min="2" max="50" placeholder="Votre nom" />
+            <span id="spanNom"> il y a une erreur </span>
+            <br /><br />
 
+            <label for="prenom" class="firstCol">Prénom</label>
+            <input type="text" name="prenom" id="prenom" size="20" min="2" max="50" placeholder="Votre prenom" />
+            <br /><br />
+
+            <label for="age" class="firstCol">Âge</label>
+            <input type="text" name="age" id="age" size="20" placeholder="Votre âge" />
+            <span id="spanAge"> il y a une erreur </span>
+            <br /><br />
+
+            <label for="pseudo" class="firstCol">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" size="20" min="4" max="50" placeholder="Votre pseudo" />
+            <span id="spanPseudo"> il y a une erreur </span>
+
+            <br /><br />
+            <label for="pwd" class="firstCol">Mot de passe</label>
+            <input type="password" name="pwd" id="pwd" size="20" min="6" placeholder="Votre mot de passe" />
+            <span id="spanPwd"> il y a une erreur </span>
+            <br /><br />
+
+            <label for="confirmation" class="firstCol">Confirmation</label>
+            <input type="password" name="confirmation" id="confirmation" size="20" min="6" placeholder="Confirmation mot de passe" />
+            <span id="spanConfirm"> il y a une erreur </span>
+            <br /><br />
+
+            <label for="pays" class="firstCol">Pays</label>
+            <select name="pays" id="pays"> 
+                
+                <option value="none" selected>Sélectionnez votre pays de résidence</option> 
+                <option value="fr">France</option> 
+                <option value="es">Espagne</option> 
+                <option value="it">Italie</option> 
+                <option value="gb">Royaume-Uni</option> 
+                <option value="ca">Canada</option> 
+                <option value="us">États-Unis</option> 
+                <option value="cn">République Populaire de Chine</option> 
+                <option value="ja">Japon</option> </select>
+            <span id="spanListe"> il y a une erreur </span>
+
+            <br /><br />
+            <!-- Pas de première colonne pour cet élément du formulaire -->
+            <span class="firstCol"></span>
+            <label> <input type="checkbox" name="news" />Je souhaite recevoir la newsletter chaque mois.</label>
+            <br /><br />
+            <!-- Pas de première colonne pour cet élément du formulaire -->
+            <span class="firstCol"></span>
+            <input type="submit" name='submit' id='submit' value="Soumettre" />
+            <input type="reset" name='reset' id='reset' value="Vider" />
+        </fieldset>
+    </form>
+    <script src="js/formulaire.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700');
+
+body {
+    padding-top: 50px;
+}
+
+.firstCol {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 3px 0px;
+    width: 100px;
+    min-height: 1px;
+    text-align: right;
+}
+
+input {
+    padding: 2px;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+    outline: none;
+}
+
+input:focus {
+    border-color: rgba(82, 168, 236, 0.75);
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.ok {
+    border-color: rgba(68, 191, 68, 0.75);
+}
+
+.ok:focus {
+    border-color: rgba(68, 191, 68, 0.75);
+    box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+
+.nok {
+    border-color: rgba(191, 68, 68, 0.75);
+}
+
+.nok:focus {
+    border-color: rgba(191, 68, 68, 0.75);
+    box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+span {
+	color: firebrick;
+    font-family: 'UnifrakturCook', cursive;
+
+}
