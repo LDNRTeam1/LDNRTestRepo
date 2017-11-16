@@ -1,0 +1,61 @@
+body {
+    padding-top: 30px;
+}
+
+#tchat {
+    height: 500px;
+    width: 390px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px #03A9F4 solid;
+    background-color: white;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+fieldset {
+    background-color: #41BAEE;
+    border: 1px #03A9F4 solid;
+    border-radius: 10px 10px;
+    box-shadow: 10px 10px 5px #015C83;
+    width: 75%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.rouge {
+    color: red;
+}
+
+
+.bouton {
+    width: 25px;
+    border: none;
+    background: transparent;
+    border-radius: 10px 10px;
+}
+
+#styleTexte {
+    margin-top: 10px;
+    padding-bottom: 4px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px 10px;
+    background-color: #0FAEF3;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#champs {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#03A9F4
